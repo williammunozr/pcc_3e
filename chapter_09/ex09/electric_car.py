@@ -1,5 +1,6 @@
-from car import *
-from battery import *
+from car import Car
+from battery import Battery
+
 
 class ElectricCar(Car):
     """Represent aspects of a car, specific to electric vehicles."""

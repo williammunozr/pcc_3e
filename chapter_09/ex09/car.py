@@ -1,3 +1,6 @@
+"""A class that can be used to represent a car."""
+
+
 class Car:
     """A simple attempt to represent a car."""
 
@@ -13,13 +16,13 @@ class Car:
         long_name = f"{self.year} {self.make} {self.model}"
         return long_name.title()
 
-    def read_odemeter(self):
+    def read_odometer(self):
         """Print a statement showing the car's mileage."""
         print(f"This car has {self.odometer_reading} miles on it.")
 
-    def update_odemeter(self, mileage):
+    def update_odometer(self, mileage):
         """
-        Set the odemeter reading to the given value.
+        Set the odometer reading to the given value.
         Reject the change if it attempts to roll the odometer back.
         """
         if mileage >= self.odometer_reading:

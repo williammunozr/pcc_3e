@@ -1,0 +1,3 @@
+I love Golang programming.
+I love creating CLI tools.
+I also love working with Rest API.

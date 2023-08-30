@@ -13,46 +13,18 @@ Code that produces warnings but still runs correctly is noted under Errata, as t
 If you find an error in the book that's not listed here, or can’t get something to work, please let me know. You can reach me through email at ehmatthes@gmail.com, or on Twitter at @ehmatthes.
 
 - [Updates](#updates)
-    - [Chapter 12](#chapter-12-temporary-update)
 - [Errata](#errata)
     - [Chapter 6](#chapter-6)
     - [Chapter 15](#chapter-15)
     - [Chapter 16](#chapter-16)
+    - [Chapter 19](#chapter-19)
 
+---
 
 Updates
 ---
 
-### Chapter 12 (temporary update)
-
-If you try to install Pygame using the book's instructions, and you're using Python 3.11, you'll get an error similar to the following:
-
-```
-$ python -m pip install pygame 
-Collecting pygame
-  Using cached pygame-2.1.2.tar.gz (10.1 MB)
-  Preparing metadata (setup.py) ... done
-Installing collected packages: pygame
-  DEPRECATION: pygame is being installed using the legacy 'setup.py...
-  Running setup.py install for pygame ... error
-  error: subprocess-exited-with-error
-  ...
-error: legacy-install-failure
-...
-```
-
-There is a pre-release version of Pygame that works on Python 3.11. To install a working version, use the following command instead:
-
-```
-$ pip install --pre pygame
-Collecting pygame
-  Downloading pygame-2.1.3.dev8...
-     ━━━━━━ 12.9/12.9 MB 6.3 MB/s eta 0:00:00
-Installing collected packages: pygame
-Successfully installed pygame-2.1.3.dev8
-```
-
-A new release should be made shortly. As soon as [this issue](https://github.com/pygame/pygame/issues/3522) is closed, this workaround will no longer be needed.
+There are no updates to note at this time.
 
 ---
 
@@ -83,3 +55,13 @@ plt.style.use('seaborn-v0_8')
 ### Chapter 16
 
 As noted above for Chapter 15, use `seaborn-v0_8` wherever you see `seaborn`.
+
+### Chapter 19
+
+On page 416, the sentence:
+
+> Make a new *urls.py* file in the directory *ll_project/accounts/* and add the following...
+
+should instead read:
+
+> Make a new *urls.py* file in the directory *learning_log/accounts/* and add the following...
